@@ -1,0 +1,59 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hallo
+    - hi
+    - guten morgen
+    - guten abend
+    - guten tag
+    - moin
+    - hey there
+    - hey solik
+    - hallo solik
+    - schönen tag
+    - hi solik
+
+- intent: goodbye
+  examples: |
+    - tschüss
+    - bye
+    - schönen tag noch
+
+- intent: confirm
+  examples: |
+    - ja
+    - genau
+    - richtig
+
+- intent: deny
+  examples: |
+    - nein
+    - nicht
+    - nicht ganz
+    - ne
+    - nein danke
+
+- intent: search_for_room
+  examples: |
+    - ich suche nach einen raum
+    - wo ist der raum
+    - wo ist büro
+    - wie finde ich den raum
+    - wie komme ich zu den raum
+    - wo ist das zimmer
+    - wie finde ich das zimmer
+    - wie komme ich zu dem zimmer
+
+
+- intent: search_for_person
+  examples: |
+    - wo finde ich den professor
+
+- intent: weather
+  examples: |
+    - regnet es heute am campus
+    - was für wetter gibt es heute
+
