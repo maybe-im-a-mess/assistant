@@ -50,21 +50,21 @@ nlu:
     - keinen
 - intent: search_for_room
   examples: |
-    - wo ist das büro
-    - wo ist der raum
-    - wo ist das zimmer
-    - ich suche nach einem büro
-    - ich suche nach einem raum
-    - ich suche nach einem zimmer
-    - wie finde ich das büro
-    - wie finde ich den raum
-    - wie finde ich das zimmer
-    - wie komme ich zum büro
-    - wie komme ich zum raum
-    - wie komme ich zum zimmer
-    - wo liegt dar büro
-    - wo liegt der raum
-    - wo liegt das zimmer
+    - wo ist das büro [a012](room)
+    - wo ist der raum [k201](room)
+    - wo ist das zimmer [k106/107](room)
+    - ich suche nach einem büro [b205](room)
+    - ich suche nach einem raum [c108](room)
+    - ich suche nach einem zimmer [e001](room)
+    - wie finde ich das büro [d214](room)
+    - wie finde ich den raum [i009](room)
+    - wie finde ich das zimmer [i108](room)
+    - wie komme ich zum büro [a104](room)
+    - wie komme ich zum raum [b002](room)
+    - wie komme ich zum zimmer [j102](room)
+    - wo liegt dar büro [l005](room)
+    - wo liegt der raum [e214](room)
+    - wo liegt das zimmer [d213](room)
 - intent: search_for_person
   examples: |
     - wo finde ich den professor [ionescu](person)
