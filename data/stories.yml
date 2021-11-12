@@ -11,7 +11,7 @@ stories:
       - room_to_find:
   - action: find_room
   - intent: deny
-  - action: help
+  - action: utter_help
 
 - story: search_for_person
   steps:
@@ -20,7 +20,7 @@ stories:
   - intent: search_for_person
   - action: find_person
   - intent: confirm
-  - action: say_goodbye
+  - action: utter_goodbye
 
 - story: search_for_building
   steps:
@@ -38,7 +38,6 @@ stories:
   - intent: weather
   - action: tell_weather
 
-ihouhoiuhou
 - story: search_for_office
   steps:
   - intent: greet
@@ -46,10 +45,10 @@ ihouhoiuhou
   - intent: search_for_office
   - action: find_office
   - intent: deny
-  - action: help
+  - action: utter_help
   - intent: search_for_person
   - action: find_person
   - intent: deny
-  - action: help
+  - action: utter_help
   - intent: deny
-  - action: sorry
+  - action: utter_sorry

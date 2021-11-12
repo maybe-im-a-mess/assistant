@@ -11,34 +11,20 @@ intents:
   - search_for_office
   - weather
 
-slots:
-  name:
-    type: text
-    influence_conversation: true
-  person_to_find:
-    type: text
-    influence_conversation: true
-  room_to_find:
-    type: text
-    influence_conversation: true
-  office_to_find:
-    type: text
-    influence_conversation: true
-  building_to_find:
-    type: text
-    influence_conversation: true
-
 responses:
   utter_greet:
-  - text: "Hallo! Wie kann ich dir helfen?"
+  - text: |
+    Hallo! Wie kann ich dir helfen?
+  - text: |
 
-  say_goodbye:
+
+  utter_goodbye:
   - text: "Tschüß!"
 
-  sorry:
+  utter_sorry:
   - text: "Entschuldigung! Ich kann damit nicht helfen."
 
-  help:
+  utter_help:
   - text: "Kannst du mich anders fragen?"
 
 actions:
