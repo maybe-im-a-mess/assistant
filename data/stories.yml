@@ -2,10 +2,53 @@ version: "2.0"
 
 stories:
 
-- story: suche_nach_raum
+- story: search_for_room
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: suche_nach_raum
+  - intent: search_for_room
+  - slot_was_set:
+      - room_to_find:
   - action: find_room
+  - intent: deny
+  - action: help
 
+- story: search_for_person
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: search_for_person
+  - action: find_person
+  - intent: confirm
+  - action: say_goodbye
+
+- story: search_for_building
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: search_for_building
+  - action: find_building
+  - intent: search_for_office
+  - action: find_office
+
+- story: weather
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: weather
+  - action: tell_weather
+
+- story: search_for_office
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: search_for_office
+  - action: find_office
+  - intent: deny
+  - action: help
+  - intent: search_for_person
+  - action: find_person
+  - intent: deny
+  - action: help
+  - intent: deny
+  - action: sorry

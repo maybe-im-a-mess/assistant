@@ -3,31 +3,50 @@ version: "2.0"
 intents:
   - greet
   - goodbye
-  - affirm
+  - confirm
   - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
+  - search_for_room
+  - search_for_person
+  - search_for_building
+  - search_for_office
+  - weather
+
+slots:
+  name:
+    type: text
+    influence_conversation: true
+  person_to_find:
+    type: text
+    influence_conversation: true
+  room_to_find:
+    type: text
+    influence_conversation: true
+  office_to_find:
+    type: text
+    influence_conversation: true
+  building_to_find:
+    type: text
+    influence_conversation: true
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Hallo! Wie kann ich dir helfen?"
 
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+  say_goodbye:
+  - text: "Tschüß!"
 
-  utter_did_that_help:
-  - text: "Did that help you?"
+  sorry:
+  - text: "Entschuldigung! Ich kann damit nicht helfen."
 
-  utter_happy:
-  - text: "Great, carry on!"
+  help:
+  - text: "Kannst du mich anders fragen?"
 
-  utter_goodbye:
-  - text: "Bye"
-
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+actions:
+  - find_person
+  - find_building
+  - find_office
+  - tell_weather
+  - find_room
 
 session_config:
   session_expiration_time: 60

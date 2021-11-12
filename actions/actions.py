@@ -11,7 +11,13 @@
 #
 # from rasa_sdk import Action, Tracker
 # from rasa_sdk.executor import CollectingDispatcher
-#
+import requests
+import requests as requests
+
+x = requests.get('')
+print(x.text)
+
+
 #
 # class ActionHelloWorld(Action):
 #
