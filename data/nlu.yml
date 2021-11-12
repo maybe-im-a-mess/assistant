@@ -67,36 +67,37 @@ nlu:
     - wo liegt das zimmer
 - intent: search_for_person
   examples: |
-    - wo finde ich den professor
-    - wo finde ich die professorin
-    - wo finde ich dekanatsekretärin
-    - wo finde ich herr
-    - wo finde ich frau
-    - ich brauche den professor
-    - ich brauche die professorin
-    - ich brauche die dekanatsekretärin
-    - ich brauche herr
-    - ich brauche frau
-    - wo ist der professor
-    - wo ist die professorin
-    - wo ist dekanatsekretärin
-    - wo ist herr
-    - wo ist frau
-    - ich suche nach dem Professor
-    - ich suche nach der professorin
-    - ich suche nach herr
-    - ich suche nach frau
-    - ich suche nach dekanatsekretärin
-    - wo befindet sich professor
-    - wo befindet sich professorin
-    - wo befindet sich dekanatsekretärin
-    - wo befindet sich herr
-    - wo befindet sich frau
+    - wo finde ich den professor [ionescu](person)
+    - wo finde ich die professorin [liebelt](person)
+    - wo finde ich dekanatsekretärin [groll](person)
+    - wo finde ich herr [grabmeier](person)
+    - wo finde ich frau [toth](person)
+    - ich brauche den professor [rester](person)
+    - ich brauche die professorin [tischner](person)
+    - ich brauche die dekanatsekretärin [maier](person)
+    - ich brauche herr [gronwald](person)
+    - ich brauche frau [hecht](person)
+    - wo ist der professor [rascher](person)
+    - wo ist die professorin [zimmerman](person)
+    - wo ist dekanatsekretärin [riess](person)
+    - wo ist herr [moritz](person)
+    - wo ist frau [hable](person)
+    - ich suche nach dem professor [sitzberger](person)
+    - ich suche nach der professorin [juds](person)
+    - ich suche nach herr [kufner](person)
+    - ich suche nach frau [zeindl](person)
+    - ich suche nach dekanatsekretärin [heindl](person)
+    - wo befindet sich professor [marek](person)
+    - wo befindet sich professorin [ahrens](person)
+    - wo befindet sich herr [berg](person)
+    - wo befindet sich frau [heil-murauer](person)
+    - wo befindet sich dekanatsekretärin [tank](person)
+
 - intent: search_for_building
   examples: |
-    - wo finde ich die mensa
-    - wo finde ich das glashaus
-    - wo finde ich die bibliothek
+    - wo finde ich die [mensa](building)
+    - wo finde ich das [glashaus](building)
+    - wo finde ich die [bibliothek](building)
     - wo finde ich das gebäude [a](building)
     - wo finde ich das gebäude [b](building)
     - wo finde ich das gebäude [c](building)
@@ -109,81 +110,81 @@ nlu:
     - wo finde ich das gebäude [j](building)
     - wo finde ich das gebäude [k](building)
     - wo finde ich das gebäude [l](building)
-    - wo finde ich die [rosa](building) gebäude
-    - wo finde ich der [zentrale innenhof](building) des campus
+    - wo finde ich die [rosa gebäude](building)
+    - wo finde ich der [zentrale innenhof des campus](building)
     - wo befindet sich die [mensa](building)
-    - wo befindet sich [glashaus]
-    - wo befindet sich [bibliothek]
+    - wo befindet sich [glashaus](building)
+    - wo befindet sich [bibliothek](building)
     - wo befindet sich das gebäude [a](building)
     - wo befindet sich das gebäude [b](building)
-    - wo befindet sich das gebäude c
-    - wo befindet sich das gebäude d
-    - wo befindet sich das gebäude e
-    - wo befindet sich das gebäude f
-    - wo befindet sich das gebäude g
-    - wo befindet sich das gebäude h
-    - wo befindet sich das gebäude i
-    - wo befindet sich das gebäude j
-    - wo befindet sich das gebäude k
-    - wo befindet sich das gebäude l
-    - wo befinden sich die rosa gebäude
-    - wo befindet sich der zentrale innenhof des campus
-    - wo ist die mensa
-    - wo ist glashaus
-    - wo ist bibliothek
-    - wo ist das gebäude a
-    - wo ist das gebäude b
-    - wo ist das gebäude c
-    - wo ist das gebäude d
-    - wo ist das gebäude e
-    - wo ist das gebäude f
-    - wo ist das gebäude g
-    - wo ist das gebäude h
-    - wo ist das gebäude i
-    - wo ist das gebäude j
-    - wo ist das gebäude k
-    - wo ist das gebäude l
-    - wo sind die rosa gebäude
-    - wo ist der zentrale innenhof des campus
-    - wo liegt die mensa
-    - wo liegt glashaus
-    - wo liegt bibliothek
-    - wo liegt das gebäude a
-    - wo liegt das gebäude b
-    - wo liegt das gebäude c
-    - wo liegt das gebäude d
-    - wo liegt das gebäude e
-    - wo liegt das gebäude f
-    - wo liegt das gebäude g
-    - wo liegt das gebäude h
-    - wo liegt das gebäude i
-    - wo liegt das gebäude j
-    - wo liegt das gebäude k
-    - wo liegt das gebäude l
-    - wo liegen die rosa gebäude
-    - wo liegt der zentrale innenhof des campus
+    - wo befindet sich das gebäude [c](buildind)
+    - wo befindet sich das gebäude [d](building)
+    - wo befindet sich das gebäude [e](building)
+    - wo befindet sich das gebäude [f](building)
+    - wo befindet sich das gebäude [g](building)
+    - wo befindet sich das gebäude [h](building)
+    - wo befindet sich das gebäude [i](building)
+    - wo befindet sich das gebäude [j](buildung)
+    - wo befindet sich das gebäude [k](building)
+    - wo befindet sich das gebäude [l](building)
+    - wo befinden sich die [rosa gebäude](building)
+    - wo befindet sich der [zentrale innenhof des campus](building)
+    - wo ist die [mensa](building)
+    - wo ist [glashaus](building)
+    - wo ist [bibliothek](building)
+    - wo ist das gebäude [a](building)
+    - wo ist das gebäude [b](building)
+    - wo ist das gebäude [c](building)
+    - wo ist das gebäude [d](building)
+    - wo ist das gebäude [e](building)
+    - wo ist das gebäude [f](building)
+    - wo ist das gebäude [g](building)
+    - wo ist das gebäude [h](building)
+    - wo ist das gebäude [i](building)
+    - wo ist das gebäude [j](building)
+    - wo ist das gebäude [k](building)
+    - wo ist das gebäude [l](building)
+    - wo sind die [rosa gebäude](building)
+    - wo ist der [zentrale innenhof des campus](building)
+    - wo liegt die [mensa](building)
+    - wo liegt [glashaus](building)
+    - wo liegt [bibliothek](building)
+    - wo liegt das gebäude [a](building)
+    - wo liegt das gebäude [b](building)
+    - wo liegt das gebäude [c](building)
+    - wo liegt das gebäude [d](building)
+    - wo liegt das gebäude [e](building)
+    - wo liegt das gebäude [f](building)
+    - wo liegt das gebäude [g](building)
+    - wo liegt das gebäude [h](building)
+    - wo liegt das gebäude [i](building)
+    - wo liegt das gebäude [j](building)
+    - wo liegt das gebäude [k](building)
+    - wo liegt das gebäude [l](building)
+    - wo liegen die [rosa gebäude](building)
+    - wo liegt der [zentrale innenhof des campus](building)
 intent: search_for_office
   examples: |
-    - wo finde ich das sprachzentrum
-    - wo finde ich den international office
-    - wo finde ich copyshop
-    - wo finde ich finanzabteilung
-    - wo finde ich studentenwerk
-    - wo befindet sich sprachzentrum
-    - wo befindet sich international office
-    - wo befindet sich copyshop
-    - wo befindet sich finanzabteilung
-    - wo befindet sich studentenwerk
-    - wo ist sprachzentrum
-    - wo ist international office
-    - wo ist copyshop
-    - wo ist finanzabteilung
-    - wo ist studentenwerk
-    - wo liegt sprachzentrum
-    - wo liegt international office
-    - wo liegt copyshop
-    - wo liegt finanzabteilung
-    - wo liegt studentenwerk
+    - wo finde ich das [sprachzentrum](office)
+    - wo finde ich den [international office](office)
+    - wo finde ich [copyshop](office)
+    - wo finde ich [finanzabteilung](office)
+    - wo finde ich [studentenwerk](office)
+    - wo befindet sich [sprachzentrum](office)
+    - wo befindet sich [international office](office)
+    - wo befindet sich [copyshop](office)
+    - wo befindet sich [finanzabteilung](office)
+    - wo befindet sich [studentenwerk](office)
+    - wo ist [sprachzentrum](office)
+    - wo ist [international office](office)
+    - wo ist [copyshop](office)
+    - wo ist [finanzabteilung](office)
+    - wo ist [studentenwerk](office)
+    - wo liegt [sprachzentrum](office)
+    - wo liegt [international office](office)
+    - wo liegt [copyshop](office)
+    - wo liegt [finanzabteilung](office)
+    - wo liegt [studentenwerk](office)
 - intent: weather
   examples: |
     - regnet es heute am campus
