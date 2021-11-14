@@ -3,51 +3,55 @@ version: "2.0"
 nlu:
 - intent: greet
   examples: |
-    - hey
-    - hallo
     - hi
-    - guten morgen
-    - guten abend
-    - guten tag
+    - hey
+    - hola
     - moin
+    - hallo
+    - hi solik
     - hey there
     - hey solik
+    - guten tag
     - hallo solik
+    - guten abend
+    - guten morgen
     - schönen guten tag
-    - hi solik
-    - ohla
+
 - intent: goodbye
   examples: |
-    - tschüss
     - bye
-    - schönen tag noch
     - chao
+    - tschüss
     - wiederhören
     - wiedersehen
     - auf wiederhören
     - auf wiedersehen
+    - schönen tag noch
+
 - intent: confirm
   examples: |
     - ja
-    - genau
-    - richtig
-    - jawohl
-    - passt
     - okay
-    - einverstanden
-    - in ordnung
+    - genau
     - gerne
+    - passt
+    - jawohl
+    - richtig
+    - in ordnung
+    - einverstanden
+
 - intent: deny
   examples: |
-    - nein
-    - nicht
-    - nicht ganz
     - ne
-    - nein danke
     - nö
-    - keine
+    - nein
     - kein
+    - nicht
+    - keine
     - keinen
+    - nicht ganz
+    - nein danke
+
 - intent: search_for_room
   examples: |
     - wo ist das büro [a012](room)
@@ -65,6 +69,7 @@ nlu:
     - wo liegt dar büro [l005](room)
     - wo liegt der raum [e214](room)
     - wo liegt das zimmer [d213](room)
+
 - intent: search_for_person
   examples: |
     - wo finde ich den professor [ionescu](person)
@@ -163,6 +168,7 @@ nlu:
     - wo liegt das gebäude [l](building)
     - wo liegen die [rosa gebäude](building)
     - wo liegt der [zentrale innenhof des campus](building)
+
 intent: search_for_office
   examples: |
     - wo finde ich das [sprachzentrum](office)
@@ -185,6 +191,7 @@ intent: search_for_office
     - wo liegt [copyshop](office)
     - wo liegt [finanzabteilung](office)
     - wo liegt [studentenwerk](office)
+
 - intent: weather
   examples: |
     - regnet es heute am campus
@@ -195,8 +202,8 @@ intent: search_for_office
 
 entities:
   - name
-  - person
   - room
+  - person
   - office
   - building
 

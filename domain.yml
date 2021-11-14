@@ -2,37 +2,60 @@ version: "2.0"
 
 intents:
   - greet
+  - deny
+  - weather
   - goodbye
   - confirm
-  - deny
   - search_for_room
+  - search_for_office
   - search_for_person
   - search_for_building
-  - search_for_office
-  - weather
 
 responses:
   utter_greet:
   - text: |
     Hallo! Wie kann ich dir helfen?
   - text: |
-
+    Schönen guten Tag! Wie kann ich dir helfen?
+  - text: |
+    Hallo, mein Freund! Wie kann ich dir helfen?
+  - text: |
+    Guten Tag, mein Freund! Was kann ich für dich tun?
+  - text: |
+    Hallo! Schön dich zu hören! Wie kann ich dir helfen?
 
   utter_goodbye:
-  - text: "Tschüß!"
+  - text: |
+    Bye!
+  - text: |
+    Tschüß!
+  - text: |
+    Bis bald...
+  - text: |
+    War schön mit dir zu reden!
 
   utter_sorry:
-  - text: "Entschuldigung! Ich kann damit nicht helfen."
+  - text: |
+    Entschuldigung! Ich kann damit nicht helfen.
+  - text: |
+    Ein Fehler ist aufgetreten. Bitte versuche es erneut.
+  - text: |
+    Ich bin mir nicht sicher, ob ich das richtig verstanden habe.
 
   utter_help:
-  - text: "Kannst du mich anders fragen?"
+  - text: |
+    Kannst du mich anders fragen?
+  - text: |
+    Ich habe das leider nicht verstanden. Könntest du bitte die Frage umformulieren?
+  - text: |
+    Darauf hebe ich keine Antwort. Gibt es etwas anderes, bei dem ich dir helfen kann?
 
 actions:
-  - find_person
-  - find_building
-  - find_office
-  - tell_weather
   - find_room
+  - find_office
+  - find_person
+  - tell_weather
+  - find_building
 
 session_config:
   session_expiration_time: 60
