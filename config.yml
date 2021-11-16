@@ -4,6 +4,7 @@ language: de
 
 pipeline:
   - name: SpacyNLP
+    model: "en_core_web_md"
   - name: SpacyTokenizer
   - name: SpacyFeaturizer
   - name: RegexFeaturizer
