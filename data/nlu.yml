@@ -169,7 +169,7 @@ nlu:
     - wo liegen die [rosa gebäude](building)
     - wo liegt der [zentrale innenhof des campus](building)
 
-intent: search_for_office
+- intent: search_for_office
   examples: |
     - wo finde ich das [sprachzentrum](office)
     - wo finde ich den [international office](office)
