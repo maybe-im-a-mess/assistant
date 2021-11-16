@@ -56,6 +56,7 @@ actions:
   - find_person
   - tell_weather
   - find_building
+  - say_hallo
 
 session_config:
   session_expiration_time: 60
