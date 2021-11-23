@@ -11,11 +11,13 @@ intents:
   - search_for_person
   - search_for_building
 
+entities:
+  - person
+  - room
+  - name
+  - building
 
 slots:
-  name:
-    type: text
-    influence_conversation: true
   person:
     type: text
     influence_conversation: true
