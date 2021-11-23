@@ -14,7 +14,7 @@ intents:
 entities:
   - person
   - room
-  - name
+  - office
   - building
 
 slots:
