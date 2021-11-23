@@ -11,6 +11,25 @@ intents:
   - search_for_person
   - search_for_building
 
+
+slots:
+  name:
+    type: text
+    influence_conversation: true
+  person:
+    type: text
+    influence_conversation: true
+  room:
+    type: text
+    influence_conversation: true
+  office:
+    type: text
+    influence_conversation: true
+  building:
+    type: text
+    influence_conversation: true
+
+
 responses:
   utter_greet:
   - text: "Hallo! Wie kann ich dir helfen?"
@@ -40,12 +59,13 @@ responses:
 
 
 actions:
-  - find_room
-  - find_office
-  - find_person
+  - say_hello
+  - action_find_room
+  - action_find_office
+  - action_find_person
   - tell_weather
-  - find_building
-  - say_hallo
+  - action_find_building
+
 
 session_config:
   session_expiration_time: 60

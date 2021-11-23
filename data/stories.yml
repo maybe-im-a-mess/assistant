@@ -8,8 +8,8 @@ stories:
   - action: utter_greet
   - intent: search_for_room
   - slot_was_set:
-      - room_to_find:
-  - action: find_room
+      - room:
+  - action: action_find_room
   - intent: deny
   - action: utter_help
 
@@ -18,7 +18,9 @@ stories:
   - intent: greet
   - action: utter_greet
   - intent: search_for_person
-  - action: find_person
+  - slot_was_set:
+      - person:
+  - action: action_find_person
   - intent: confirm
   - action: utter_goodbye
 
@@ -27,9 +29,13 @@ stories:
   - intent: greet
   - action: utter_greet
   - intent: search_for_building
-  - action: find_building
+  - slot_was_set:
+      - building:
+  - action: action_find_building
   - intent: search_for_office
-  - action: find_office
+  - slot_was_set:
+      - office:
+  - action: action_find_office
 
 - story: weather
   steps:
@@ -43,11 +49,15 @@ stories:
   - intent: greet
   - action: utter_greet
   - intent: search_for_office
-  - action: find_office
+  - slot_was_set:
+      - office:
+  - action: action_find_office
   - intent: deny
   - action: utter_help
   - intent: search_for_person
-  - action: find_person
+  - slot_was_set:
+      - person:
+  - action: action_find_person
   - intent: deny
   - action: utter_help
   - intent: deny

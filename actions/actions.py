@@ -9,7 +9,9 @@
 
 from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
+from rasa_sdk.events import SlotSet
 from rasa_sdk.executor import CollectingDispatcher
+
 import requests
 import requests as requests
 
@@ -28,4 +30,22 @@ class Greeting(Action):
         dispatcher.utter_greet("Hello")
 
         return []
+
+
+class Room(Action):
+    def name(self) -> Text:
+        return "find_room"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        room = tracker.get_slot("room")
+        lst_room = []
+        for i in room:
+            lst_room.append(i)
+        dispatcher.action_find_room("Raum {} befindet sich im Gebäude {} auf der {} Etage".format(room, lst_room[0], lst_room[1]))
+
+        return [SlotSet("room", room)]
+
+
 
