@@ -11,6 +11,11 @@ intents:
   - search_for_person
   - search_for_building
 
+entities:
+  - person
+  - room
+  - office
+  - building
 
 entities:
   - person

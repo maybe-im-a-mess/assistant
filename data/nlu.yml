@@ -206,3 +206,20 @@ entities:
   - person
   - office
   - building
+
+slots:
+  name:
+    type: text
+    influence_conversation: true
+  person:
+    type: text
+    influence_conversation: true
+  room:
+    type: text
+    influence_conversation: true
+  office:
+    type: text
+    influence_conversation: true
+  building:
+    type: text
+    influence_conversation: true
