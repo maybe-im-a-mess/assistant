@@ -34,7 +34,7 @@ class Greeting(Action):
 
 class Room(Action):
     def name(self) -> Text:
-        return "find_room"
+        return "action_find_room"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
@@ -43,9 +43,11 @@ class Room(Action):
         lst_room = []
         for i in room:
             lst_room.append(i)
-        dispatcher.action_find_room("Raum {} befindet sich im Gebäude {} auf der {} Etage".format(room, lst_room[0], lst_room[1]))
+        dispatcher.utter_attachment("Raum {} befindet sich im Gebäude {} auf der {} Etage".format(room, lst_room[0], lst_room[1]))
 
         return [SlotSet("room", room)]
+
+
 
 
 
