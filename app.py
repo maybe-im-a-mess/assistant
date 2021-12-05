@@ -1,5 +1,4 @@
 from flask import Flask, request, jsonify
-import json
 
 import requests
 from bs4 import BeautifulSoup as BS
@@ -10,6 +9,7 @@ html = BS(r.content, 'html.parser')
 app = Flask(__name__)
 
 persons = []
+
 infos = []
 
 for el in html.select(".referat_row > .moreMitarbeiter"):
@@ -26,23 +26,20 @@ for i in range(len(profs)):
     element = {'id': i + 1, 'name': profs[i][0], 'room': profs[i][1]}
     persons.append(element)
 
-# load the information about professors to the json file
-filename = 'persons.json'
-with open(filename, "w", encoding="UTF-8") as file:
-    json.dump(persons, file, indent=2, ensure_ascii=False)
+print(persons)
 
 
 def _find_next_id():
     return max(person["id"] for person in persons) + 1
 
 
-@app.get("/persons")
-def get_persons():
+@app.get("/countries")
+def get_countries():
     return jsonify(persons)
 
 
-@app.post("/persons")
-def add_person():
+@app.post("/countries")
+def add_country():
     if request.is_json:
         person = request.get_json()
         person["id"] = _find_next_id()
