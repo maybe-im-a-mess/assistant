@@ -17,11 +17,6 @@ entities:
   - office
   - building
 
-entities:
-  - person
-  - room
-  - office
-  - building
 
 slots:
   person:

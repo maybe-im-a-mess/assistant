@@ -13,7 +13,7 @@ from rasa_sdk.events import SlotSet
 from rasa_sdk.executor import CollectingDispatcher
 
 import requests
-import requests as requests
+import json
 
 
 # x = requests.get('')
@@ -48,6 +48,22 @@ class Room(Action):
         return [SlotSet("room", room)]
 
 
+class Person(Action):
+    def name(self) -> Text:
+        return "action_find_person"
 
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        person_to_find = tracker.get_slot("person")
+        with open('persons.json', "r", encoding="UTF-8") as file:
+            professors = json.load(file)
+        for i in range(len(professors)):
+            name = professors[i]["name"]
+            if name.find(person_to_find) != -1:
+                office = professors[i]["room"]
+        dispatcher.utter_attachment("Versuch mal das Zimmer {}".format(office))
+
+        return [SlotSet("person", person_to_find)]
 
 
