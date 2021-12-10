@@ -1,19 +1,9 @@
-# This files contains your custom actions which can be used to run
-# custom Python code.
-#
-# See this guide on how to implement these action:
-# https://rasa.com/docs/rasa/custom-actions
-
-
-# This is a simple example for a custom action which utters "Hello World!"
-
 from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.events import SlotSet
 from rasa_sdk.executor import CollectingDispatcher
-
-import requests
 import json
+from weather import say_weather
 
 
 # x = requests.get('')
@@ -67,3 +57,16 @@ class Person(Action):
         return [SlotSet("person", person_to_find)]
 
 
+class Weather(Action):
+
+    def name(self) -> Text:
+        return "tell_weather"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        city = tracker.latest_message['text']
+        actual_weather, temp = say_weather(city)
+        dispatcher.utter_template("utter_temp", tracker, city=city, actual_weather=actual_weather, temp=temp)
+
+        return []

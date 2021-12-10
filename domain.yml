@@ -4,6 +4,7 @@ intents:
   - greet
   - deny
   - weather
+  - city
   - goodbye
   - confirm
   - search_for_room
@@ -16,6 +17,8 @@ entities:
   - room
   - office
   - building
+  - weather
+  - city
 
 
 slots:
@@ -31,7 +34,12 @@ slots:
   building:
     type: text
     influence_conversation: true
-
+  weather:
+    type: text
+    influence_conversation: true
+  city:
+    type: text
+    influence_conversation: false
 
 responses:
   utter_greet:
@@ -45,20 +53,28 @@ responses:
   utter_goodbye:
   - text: "Bye!"
   - text: "Tschüß!"
-  - text: " Bis bald..."
+  - text: "Bis bald..."
   - text: "War schön mit dir zu reden!"
 
 
   utter_sorry:
   - text: "Entschuldigung! Ich kann damit nicht helfen."
   - text: "Ein Fehler ist aufgetreten. Bitte versuche es erneut."
-  - text: " Ich bin mir nicht sicher, ob ich das richtig verstanden habe."
+  - text: "Ich bin mir nicht sicher, ob ich das richtig verstanden habe."
 
 
   utter_help:
   - text: "Kannst du mich anders fragen?"
   - text: "Ich habe das leider nicht verstanden. Könntest du bitte die Frage umformulieren?"
   - text: "Darauf hebe ich keine Antwort. Gibt es etwas anderes, bei dem ich dir helfen kann?"
+
+  utter_city:
+  - text: "Welche Stadt möchtest du überprüfen?"
+  - text: "In welcher Stadt?"
+
+  utter_temp:
+  - text: "Zur Zeit das Wetter in {city} ist {actual_weather} und die Temperatur beträgt {temp} Grad Celsius."
+  - text: "Das Wetter in {city} ist {actual_weather} und die Temperatur ist {temp} Grad Celsius."
 
 
 actions:
@@ -68,6 +84,8 @@ actions:
   - action_find_person
   - tell_weather
   - action_find_building
+  - utter_city
+  - utter_temp
 
 
 session_config:
