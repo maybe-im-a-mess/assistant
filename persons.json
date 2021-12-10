@@ -1,0 +1,382 @@
+[
+  {
+    "id": 1,
+    "name": "Prof. Dr.-Ing. Udo Garmann",
+    "room": "K 102"
+  },
+  {
+    "id": 2,
+    "name": "Prof. Dr.-Ing. Gökçe Aydos",
+    "room": "DEGG's 2.16"
+  },
+  {
+    "id": 3,
+    "name": "Prof. Dr. Marcus Barkowsky",
+    "room": "J 203"
+  },
+  {
+    "id": 4,
+    "name": "Prof. Dr. Christina Bauer",
+    "room": "K 003"
+  },
+  {
+    "id": 5,
+    "name": "Prof. Dr. Andreas Berl",
+    "room": "ITC2 2.43"
+  },
+  {
+    "id": 6,
+    "name": "Prof. Dr. Wolfgang Dorner, M.Sc.",
+    "room": "E 228"
+  },
+  {
+    "id": 7,
+    "name": "Prof. Dr. Michael Drexl",
+    "room": "ITC2 2.28"
+  },
+  {
+    "id": 8,
+    "name": "Prof. Dr. Armin Eichinger",
+    "room": "K 103"
+  },
+  {
+    "id": 9,
+    "name": "Prof. Dr. Benedikt Elser",
+    "room": "A 011"
+  },
+  {
+    "id": 10,
+    "name": "Prof. Dr. Peter Faber",
+    "room": "DEGG's 2.18"
+  },
+  {
+    "id": 11,
+    "name": "Prof. Dr. Andreas Fischer",
+    "room": "DEGG's 2.12"
+  },
+  {
+    "id": 12,
+    "name": "Prof. Dr.-Ing. Herbert Fischer",
+    "room": "K 204"
+  },
+  {
+    "id": 13,
+    "name": "Prof. Dr. Thomas Geiß, Dipl. BW, MBA",
+    "room": "ITC2 2.39 - Startup Lab"
+  },
+  {
+    "id": 14,
+    "name": "Prof. Dr. Patrick Glauner",
+    "room": "K 006"
+  },
+  {
+    "id": 15,
+    "name": "Prof. Dr. Johannes Grabmeier, Diplom-Mathematiker, M.Sc.",
+    "room": "K 205"
+  },
+  {
+    "id": 16,
+    "name": "Prof. Dr.-Ing. Andreas Grzemba",
+    "room": "E 207"
+  },
+  {
+    "id": 17,
+    "name": "Prof. Dr. Robert Hable",
+    "room": "K 003"
+  },
+  {
+    "id": 18,
+    "name": "Prof. Dr. rer. pol. Stefan Hagl",
+    "room": "K 004"
+  },
+  {
+    "id": 19,
+    "name": "Prof. Dr. rer. pol. Georg Herde, Dipl.-Kfm.",
+    "room": "K 202"
+  },
+  {
+    "id": 20,
+    "name": "Prof. Dr. Cezar Ionescu",
+    "room": "K 005"
+  },
+  {
+    "id": 21,
+    "name": "Prof. Dr. rer. nat. Peter Jüttner",
+    "room": "K 007"
+  },
+  {
+    "id": 22,
+    "name": "Prof. Dr. Melanie Kappelmann-Fenzl, PhD",
+    "room": "K 008"
+  },
+  {
+    "id": 23,
+    "name": "Prof. Dr. Helena Liebelt",
+    "room": "ITC2+ 2.01"
+  },
+  {
+    "id": 24,
+    "name": "Prof. Thomas Limbrunner",
+    "room": "R 208"
+  },
+  {
+    "id": 25,
+    "name": "Prof. Dr. Dr. Heribert Popp, Dipl. Kfm.",
+    "room": ""
+  },
+  {
+    "id": 26,
+    "name": "Prof. Dr. Stephan  Scheuerer",
+    "room": "K 103"
+  },
+  {
+    "id": 27,
+    "name": "Prof. Dr. Josef Schneeberger",
+    "room": "K 104"
+  },
+  {
+    "id": 28,
+    "name": "Prof. Dr. Martin Schramm",
+    "room": "E 216"
+  },
+  {
+    "id": 29,
+    "name": "Prof. Dr. rer. nat. Thomas Störtkuhl",
+    "room": "DEGG's 2.16"
+  },
+  {
+    "id": 30,
+    "name": "Prof. Dr. Phillipp Torkler",
+    "room": "K 006"
+  },
+  {
+    "id": 31,
+    "name": "Prof. Dr.-Ing. Terezia Toth",
+    "room": "K 007"
+  },
+  {
+    "id": 32,
+    "name": "Prof. Dr. Javier Valdes",
+    "room": "TCF Campus Deggendorf ITC2 2.50b"
+  },
+  {
+    "id": 33,
+    "name": "Prof. Dr. Florian Wahl",
+    "room": "A 011"
+  },
+  {
+    "id": 34,
+    "name": "Prof. Dr. Simon Zabler",
+    "room": ""
+  },
+  {
+    "id": 35,
+    "name": "Prof. Dr. Roland Zink",
+    "room": "ITC2 2.50b"
+  },
+  {
+    "id": 36,
+    "name": " Amar Almaini, M.Sc.",
+    "room": "E 213"
+  },
+  {
+    "id": 37,
+    "name": " Alexander Böckl, B.Sc., M.Sc.",
+    "room": "ITC2 2.37 - Startup Lab"
+  },
+  {
+    "id": 38,
+    "name": " Nicki Bodenschatz",
+    "room": "DEGG's 2.28"
+  },
+  {
+    "id": 39,
+    "name": "Dipl.-Ing.(FH) Marc Philipp Dietrich, MBA",
+    "room": "J 101"
+  },
+  {
+    "id": 40,
+    "name": " Markus Eider, M.Sc.",
+    "room": "DEGG's 2.28"
+  },
+  {
+    "id": 41,
+    "name": "Dr.rer.nat Stefan Fischer",
+    "room": "K 008"
+  },
+  {
+    "id": 42,
+    "name": " Michael Heigl, M.Sc.",
+    "room": "E 216"
+  },
+  {
+    "id": 43,
+    "name": " Stefanie Merz, M.Sc.",
+    "room": "TCTS O 01"
+  },
+  {
+    "id": 44,
+    "name": " Konstantin Raab, M.Sc.",
+    "room": "R 208"
+  },
+  {
+    "id": 45,
+    "name": " Andreas Urmann, M.Sc",
+    "room": ""
+  },
+  {
+    "id": 46,
+    "name": " Enrico Weigelt, M.Sc.",
+    "room": "E 213"
+  },
+  {
+    "id": 47,
+    "name": " Alfons Weinzierl, B.A., M.Sc.",
+    "room": "ITC2 2.37 - Startup Lab"
+  },
+  {
+    "id": 48,
+    "name": " Jane Wuth",
+    "room": "TCF"
+  },
+  {
+    "id": 49,
+    "name": " Andrea Groll",
+    "room": "K 101"
+  },
+  {
+    "id": 50,
+    "name": " Sonja Höcherl",
+    "room": "K 101"
+  },
+  {
+    "id": 51,
+    "name": " Carolin Pankofer",
+    "room": "DEGG's 2.14"
+  },
+  {
+    "id": 52,
+    "name": " Walter Aman",
+    "room": "J 001"
+  },
+  {
+    "id": 53,
+    "name": " Kumar Ashutosh Anand, M.Sc.",
+    "room": "E 213"
+  },
+  {
+    "id": 54,
+    "name": " Elisabeth Bredow",
+    "room": "K 009"
+  },
+  {
+    "id": 55,
+    "name": " Monika Eöry",
+    "room": "J 001"
+  },
+  {
+    "id": 56,
+    "name": " Martin Fischer",
+    "room": "E 112"
+  },
+  {
+    "id": 57,
+    "name": " Björn Franken, B.Eng.",
+    "room": "J 001"
+  },
+  {
+    "id": 58,
+    "name": " Bernhard Haderer, B.Sc.",
+    "room": "DEGG's 2.28"
+  },
+  {
+    "id": 59,
+    "name": " Andreas Heinrich",
+    "room": "J 201"
+  },
+  {
+    "id": 60,
+    "name": "Dipl.-Inform. Siegfried Hildebrand",
+    "room": "DEGG's 2.26"
+  },
+  {
+    "id": 61,
+    "name": " Majed Ojak",
+    "room": "J 001"
+  },
+  {
+    "id": 62,
+    "name": " Andreas Popp, M.Sc.",
+    "room": "E 213"
+  },
+  {
+    "id": 63,
+    "name": " Andreas Rankl, M.Sc.",
+    "room": "DEGG's 2.26"
+  },
+  {
+    "id": 64,
+    "name": " Diana Schramm, B.Sc.",
+    "room": "ITC2 2.44"
+  },
+  {
+    "id": 65,
+    "name": " Laura Stockhusen, B.Eng.",
+    "room": "K 009"
+  },
+  {
+    "id": 66,
+    "name": " Caroline Vögl",
+    "room": "K 101"
+  },
+  {
+    "id": 67,
+    "name": " Sabine Vogl, B.A.",
+    "room": "K 009"
+  },
+  {
+    "id": 68,
+    "name": " Andreas Weber, B. Eng.",
+    "room": "E 114"
+  },
+  {
+    "id": 69,
+    "name": " Stephan Weber",
+    "room": "E 217"
+  },
+  {
+    "id": 70,
+    "name": " Melanie Wiendl",
+    "room": "K 101"
+  },
+  {
+    "id": 71,
+    "name": " Sebastian Wöllmann, B.Eng.",
+    "room": "TCF"
+  },
+  {
+    "id": 72,
+    "name": " Raimund Würkner",
+    "room": "J 001"
+  },
+  {
+    "id": 73,
+    "name": " Wolfgang Anetsberger, M.Sc.",
+    "room": ""
+  },
+  {
+    "id": 74,
+    "name": " Andreas Federl, M.Sc.",
+    "room": "ITC2 2.32"
+  },
+  {
+    "id": 75,
+    "name": " Andreas Weber, B. Eng.",
+    "room": "E 114"
+  },
+  {
+    "id": 76,
+    "name": " Wolfgang Anetsberger, M.Sc.",
+    "room": ""
+  }
+]
