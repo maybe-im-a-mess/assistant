@@ -45,7 +45,6 @@ stories:
   - action: utter_city
   - intent: city
   - action: tell_weather
-  -
 
 - story: search_for_office
   steps:
