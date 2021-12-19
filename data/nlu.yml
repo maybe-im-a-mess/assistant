@@ -37,6 +37,9 @@ nlu:
     - richtig
     - in ordnung
     - einverstanden
+    - danke
+    - ja danke
+    - vielen dank
 - intent: deny
   examples: |
     - ne
@@ -92,91 +95,30 @@ nlu:
     - wo befindet sich herr [berg](person)
     - wo befindet sich frau [heil-murauer](person)
     - wo befindet sich dekanatsekretärin [tank](person)
-- intent: search_for_building
-  examples: |
-    - wo finde ich die [mensa](building)
-    - wo finde ich das [glashaus](building)
-    - wo finde ich die [bibliothek](building)
-    - wo finde ich das gebäude [a](building)
-    - wo finde ich das gebäude [b](building)
-    - wo finde ich das gebäude [c](building)
-    - wo finde ich das gebäude [d](building)
-    - wo finde ich das gebäude [e](building)
-    - wo finde ich das gebäude [f](building)
-    - wo finde ich das gebäude [g](building)
-    - wo finde ich das gebäude [h](building)
-    - wo finde ich das gebäude [i](building)
-    - wo finde ich das gebäude [j](building)
-    - wo finde ich das gebäude [k](building)
-    - wo finde ich das gebäude [l](building)
-    - wo finde ich die [rosa gebäude](building)
-    - wo finde ich der [zentrale innenhof des campus](building)
-    - wo befindet sich die [mensa](building)
-    - wo befindet sich [glashaus](building)
-    - wo befindet sich [bibliothek](building)
-    - wo befindet sich das gebäude [a](building)
-    - wo befindet sich das gebäude [b](building)
-    - wo befindet sich das gebäude [c](buildind)
-    - wo befindet sich das gebäude [d](building)
-    - wo befindet sich das gebäude [e](building)
-    - wo befindet sich das gebäude [f](building)
-    - wo befindet sich das gebäude [g](building)
-    - wo befindet sich das gebäude [h](building)
-    - wo befindet sich das gebäude [i](building)
-    - wo befindet sich das gebäude [j](buildung)
-    - wo befindet sich das gebäude [k](building)
-    - wo befindet sich das gebäude [l](building)
-    - wo befinden sich die [rosa gebäude](building)
-    - wo befindet sich der [zentrale innenhof des campus](building)
-    - wo ist die [mensa](building)
-    - wo ist [glashaus](building)
-    - wo ist [bibliothek](building)
-    - wo ist das gebäude [a](building)
-    - wo ist das gebäude [b](building)
-    - wo ist das gebäude [c](building)
-    - wo ist das gebäude [d](building)
-    - wo ist das gebäude [e](building)
-    - wo ist das gebäude [f](building)
-    - wo ist das gebäude [g](building)
-    - wo ist das gebäude [h](building)
-    - wo ist das gebäude [i](building)
-    - wo ist das gebäude [j](building)
-    - wo ist das gebäude [k](building)
-    - wo ist das gebäude [l](building)
-    - wo sind die [rosa gebäude](building)
-    - wo ist der [zentrale innenhof des campus](building)
-    - wo liegt die [mensa](building)
-    - wo liegt [glashaus](building)
-    - wo liegt [bibliothek](building)
-    - wo liegt das gebäude [a](building)
-    - wo liegt das gebäude [b](building)
-    - wo liegt das gebäude [c](building)
-    - wo liegt das gebäude [d](building)
-    - wo liegt das gebäude [e](building)
-    - wo liegt das gebäude [f](building)
-    - wo liegt das gebäude [g](building)
-    - wo liegt das gebäude [h](building)
-    - wo liegt das gebäude [i](building)
-    - wo liegt das gebäude [j](building)
-    - wo liegt das gebäude [k](building)
-    - wo liegt das gebäude [l](building)
-    - wo liegen die [rosa gebäude](building)
-    - wo liegt der [zentrale innenhof des campus](building)
+
 - intent: search_for_office
   examples: |
+    - wo finde ich die [mensa](office)
+    - wo finde ich das [glashaus](office)
+    - wo finde ich die [bibliothek](office)
     - wo finde ich das [sprachzentrum](office)
     - wo finde ich den [international office](office)
     - wo finde ich [copyshop](office)
     - wo finde ich [finanzabteilung](office)
     - wo finde ich [studentenwerk](office)
+    - wo kann ich den [parkplatz](office) finden
     - wo befindet sich [sprachzentrum](office)
+    - wo befindet sich die [mensa](office)
+    - wo befindet sich die [bibliothek](office)
     - wo befindet sich [international office](office)
     - wo befindet sich [copyshop](office)
     - wo befindet sich [finanzabteilung](office)
     - wo befindet sich [studentenwerk](office)
     - wo ist [sprachzentrum](office)
+    - wo ist hier der [parkplatz](office)
     - wo ist [international office](office)
     - wo ist [copyshop](office)
+    - wo ist das [studentenwerk](office)
     - wo ist [finanzabteilung](office)
     - wo ist [studentenwerk](office)
     - wo liegt [sprachzentrum](office)
@@ -184,6 +126,7 @@ nlu:
     - wo liegt [copyshop](office)
     - wo liegt [finanzabteilung](office)
     - wo liegt [studentenwerk](office)
+    - ich suche nach dem [parkplatz](office)
 
 - intent: weather
   examples: |
@@ -191,42 +134,26 @@ nlu:
     - was ist das wetter heute
     - wie ist das wetter heute
     - wie ist die temperatur heute
+    - was ist das wetter am campus heute
+    - wie ist die temperatur am campus heute
 
-- intent: city
-  examples: |
-    -  deggendorf
-    -  Deggendorf
-    -  Plattling
-    -  plattling
 
 entities:
-  - name
   - room
   - person
   - office
-  - building
   - weather
-  - city
 
 slots:
-  name:
-    type: text
-    influence_conversation: true
   person:
     type: text
-    influence_conversation: true
+    influence_conversation: false
   room:
     type: text
-    influence_conversation: true
+    influence_conversation: false
   office:
     type: text
-    influence_conversation: true
-  building:
-    type: text
-    influence_conversation: true
+    influence_conversation: false
   weather:
-    type: text
-    influence_conversation: true
-  city:
     type: text
     influence_conversation: false

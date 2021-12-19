@@ -4,42 +4,35 @@ intents:
   - greet
   - deny
   - weather
-  - city
   - goodbye
   - confirm
   - search_for_room
   - search_for_office
   - search_for_person
-  - search_for_building
 
 entities:
   - person
   - room
   - office
-  - building
   - weather
-  - city
 
 
 slots:
   person:
     type: text
-    influence_conversation: true
+    influence_conversation: false
   room:
     type: text
-    influence_conversation: true
+    influence_conversation: false
   office:
     type: text
-    influence_conversation: true
-  building:
-    type: text
-    influence_conversation: true
+    influence_conversation: false
   weather:
     type: text
     influence_conversation: true
   city:
     type: text
-    influence_conversation: false
+    influence_conversation: true
 
 responses:
   utter_greet:
@@ -66,15 +59,26 @@ responses:
   utter_help:
   - text: "Kannst du mich anders fragen?"
   - text: "Ich habe das leider nicht verstanden. Könntest du bitte die Frage umformulieren?"
-  - text: "Darauf hebe ich keine Antwort. Gibt es etwas anderes, bei dem ich dir helfen kann?"
+  - text: "Darauf habe ich keine Antwort. Gibt es etwas anderes, bei dem ich dir helfen kann?"
 
-  utter_city:
-  - text: "Welche Stadt möchtest du überprüfen?"
-  - text: "In welcher Stadt?"
 
   utter_temp:
-  - text: "Zur Zeit das Wetter in {city} ist {actual_weather} und die Temperatur beträgt {temp} Grad Celsius."
-  - text: "Das Wetter in {city} ist {actual_weather} und die Temperatur ist {temp} Grad Celsius."
+  - text: "Zur Zeit das Wetter in Deggendorf ist {actual_weather} und die Temperatur beträgt {temp} Grad Celsius."
+  - text: "Das Wetter in Deggendorf ist {actual_weather} und die Temperatur ist {temp} Grad Celsius."
+
+
+  utter_office:
+  - text: "{office} findest du in {location}."
+  - text: "{office} kannst du in {location} finden."
+  - text: "{office} befindet sich in {location}."
+
+  utter_person:
+  - text: "Versuch mal das Zimmer {office}."
+  - text: "Ich schlage vor, in dem Raum {office} zu suchen."
+
+  utter_room:
+  - text: "Raum {room} befindet sich im Gebäude {building} auf der {floor} Etage."
+  - text: "Um Zimmer {room} zu finden, musst du zum Gebäude {building}. Dann such mal auf der {floor} Etage."
 
 
 actions:
@@ -83,9 +87,10 @@ actions:
   - action_find_office
   - action_find_person
   - tell_weather
-  - action_find_building
-  - utter_city
   - utter_temp
+  - utter_office
+  - utter_person
+  - utter_room
 
 
 session_config:

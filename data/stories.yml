@@ -24,26 +24,11 @@ stories:
   - intent: confirm
   - action: utter_goodbye
 
-- story: search_for_building
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: search_for_building
-  - slot_was_set:
-      - building:
-  - action: action_find_building
-  - intent: search_for_office
-  - slot_was_set:
-      - office:
-  - action: action_find_office
-
 - story: weather
   steps:
   - intent: greet
   - action: utter_greet
   - intent: weather
-  - action: utter_city
-  - intent: city
   - action: tell_weather
 
 - story: search_for_office

@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "office": "Sprachzentrum",
+    "location": "Gebäude B"
+  },
+  {
+    "id": 2,
+    "office": "International Office",
+    "location": "Gebäude B"
+  },
+  {
+    "id": 3,
+    "office": "Zentrale Studienberatung",
+    "location": "Gebäude B"
+  },
+  {
+    "id": 4,
+    "office": "Mensa",
+    "location": "Gebäude F"
+  },
+  {
+    "id": 5,
+    "office": "Glashaus",
+    "location": "ITC 2"
+  },
+  {
+    "id": 6,
+    "office": "Copyshop",
+    "location": "Gebäude C"
+  },
+  {
+    "id": 7,
+    "office": "Cafeteria",
+    "location": "Gebäude F oder Gebäude K"
+  },
+  {
+    "id": 8,
+    "office": "Finanzabteilung",
+    "location": "ITC 2"
+  },
+  {
+    "id": 9,
+    "office": "Studentenwerk",
+    "location": "ITC 2"
+  },
+  {
+    "id": 10,
+    "office": "Bibliothek",
+    "location": "Gebäude G"
+  },
+  {
+    "id": 11,
+    "office": "Studienzentrum",
+    "location": "Gebäude B"
+  },
+  {
+    "id": 12,
+    "office": "Parkplatz",
+    "location": "Parkdeck Deichgärten (Zufahrt über Neusiedler Straße/ Eginger Straße)"
+  }
+]
