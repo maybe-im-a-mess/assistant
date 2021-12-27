@@ -137,7 +137,6 @@ nlu:
     - was ist das wetter am campus heute
     - wie ist die temperatur am campus heute
 
-
 entities:
   - room
   - person

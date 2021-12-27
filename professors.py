@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask
 import json
 import requests
 from bs4 import BeautifulSoup as BS
@@ -7,6 +7,7 @@ from bs4 import BeautifulSoup as BS
 r = requests.get("https://www.th-deg.de/de/hochschule/kontakt/fakultaet-ai")
 html = BS(r.content, 'html.parser')
 
+professors = Flask(__name__)
 
 persons = []
 infos = []
@@ -29,3 +30,5 @@ for i in range(len(profs)):
 filename = 'persons.json'
 with open(filename, "w", encoding="UTF-8") as file:
     json.dump(persons, file, indent=2, ensure_ascii=False)
+
+

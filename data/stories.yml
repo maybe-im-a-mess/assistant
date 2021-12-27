@@ -22,6 +22,8 @@ stories:
       - person:
   - action: action_find_person
   - intent: confirm
+  - action: utter_additional_help
+  - intent: deny
   - action: utter_goodbye
 
 - story: weather
@@ -30,6 +32,10 @@ stories:
   - action: utter_greet
   - intent: weather
   - action: tell_weather
+  - intent: confirm
+  - action: utter_additional_help
+  - intent: deny
+  - action: utter_goodbye
 
 - story: search_for_office
   steps:

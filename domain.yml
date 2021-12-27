@@ -30,9 +30,7 @@ slots:
   weather:
     type: text
     influence_conversation: true
-  city:
-    type: text
-    influence_conversation: true
+
 
 responses:
   utter_greet:
@@ -40,45 +38,45 @@ responses:
   - text: "Schönen guten Tag! Wie kann ich dir helfen?"
   - text: "Hallo, mein Freund! Wie kann ich dir helfen?"
   - text: "Guten Tag, mein Freund! Was kann ich für dich tun?"
-  - text: "Hallo! Schön dich zu hören! Wie kann ich dir helfen?"
-
 
   utter_goodbye:
   - text: "Bye!"
-  - text: "Tschüß!"
+  - text: "Schönen Tag noch! Tschüß!"
   - text: "Bis bald..."
-  - text: "War schön mit dir zu reden!"
-
+  - text: "War schön mit dir zu reden! Tschüß!"
+  - text: "Bei neuen fragen helfe ich gerne weiter. Bis dahin, bis gleich!"
 
   utter_sorry:
   - text: "Entschuldigung! Ich kann damit nicht helfen."
   - text: "Ein Fehler ist aufgetreten. Bitte versuche es erneut."
   - text: "Ich bin mir nicht sicher, ob ich das richtig verstanden habe."
 
-
   utter_help:
   - text: "Kannst du mich anders fragen?"
   - text: "Ich habe das leider nicht verstanden. Könntest du bitte die Frage umformulieren?"
   - text: "Darauf habe ich keine Antwort. Gibt es etwas anderes, bei dem ich dir helfen kann?"
 
+  utter_additional_help:
+  - text: "Immer gerne! Kann ich dir bei etwas anderem helfen?"
+  - text: "Gerne, mein Freund. Kann ich noch irgendwie helfen?"
+  - text: "Brauchst du noch irgendwelche Informationen?"
 
   utter_temp:
   - text: "Zur Zeit das Wetter in Deggendorf ist {actual_weather} und die Temperatur beträgt {temp} Grad Celsius."
   - text: "Das Wetter in Deggendorf ist {actual_weather} und die Temperatur ist {temp} Grad Celsius."
 
-
   utter_office:
-  - text: "{office} findest du in {location}."
-  - text: "{office} kannst du in {location} finden."
-  - text: "{office} befindet sich in {location}."
+  - text: "{office} findest du im {location}."
+  - text: "{office} kannst du im {location} finden."
+  - text: "{office} befindet sich im {location}."
 
   utter_person:
   - text: "Versuch mal das Zimmer {office}."
-  - text: "Ich schlage vor, in dem Raum {office} zu suchen."
+  - text: "Ich schlage vor, in dem Raum {office} zu suchen. Aber es gibt eine Möglichkeit, dass der Professor zurzeit in der Vorlesung ist. Du sollst den Stundenplan anschauen."
 
   utter_room:
   - text: "Raum {room} befindet sich im Gebäude {building} auf der {floor} Etage."
-  - text: "Um Zimmer {room} zu finden, musst du zum Gebäude {building}. Dann such mal auf der {floor} Etage."
+  - text: "Um Zimmer {room} zu finden, musst du ein Gebäude {building} betreten. Dann such mal auf der {floor} Etage."
 
 
 actions:
@@ -91,6 +89,7 @@ actions:
   - utter_office
   - utter_person
   - utter_room
+  - utter_additional_help
 
 
 session_config:
