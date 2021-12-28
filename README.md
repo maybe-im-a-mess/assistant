@@ -1,7 +1,7 @@
 <h1><b>Campus Navigation “Solik”</b></h1>
 
 <b>Kurzbeschreibung:</b> 
-Das System hilft bei der Suche von allen Büros und Räumlichkeiten des Campus der THD sowie bei der Suche nach Professoren für die Fakultät für Angewandte Informatik und  informiert über das aktuelle Wetter in Deggendorf.
+Das System hilft bei der Suche nach allen Büros und Räumlichkeiten des Campus der THD sowie bei der Suche nach Professoren für die Fakultät für Angewandte Informatik und  informiert über das aktuelle Wetter in Deggendorf.
 
 <b>Installationsbeschreibung:</b>
 <ol>
